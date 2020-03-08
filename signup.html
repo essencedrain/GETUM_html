@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getum</title>
+
+    <!--  bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700,900&display=swap&subset=korean" rel="stylesheet">
+
+    <!--  custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fixed.css">
+
+</head>
+<body>
+<!--  ======================= Start Header Area ============================== -->
+<header class="header-area mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <i class="fas fa-glass-whiskey"></i> GETUM</i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="product.html">상품목록<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">장바구니</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">주문내역</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">고객센터</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link btn btn-outline-secondary" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary" href="signup.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<!--  ======================= End Header Area ============================== -->
+
+
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
+<!--  ======================= Start signup Area =======================  -->
+
+<section class="signUp-area">
+    <div class="container">
+        <div class="row">
+            <div class="signUpFormWrap mx-auto col-md-6 col-md-offset-3">
+                <div class="heading pb-1 text-center pb-4">
+                    <h1>회원가입</h1>
+                </div>
+                <div class="signUpForm">
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="아이디" name="m_id">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="pwd1" placeholder="비밀번호" name="m_pwd">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="pwd2" placeholder="비밀번호 확인" name="m_pwd2">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="이름" name="m_name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="이메일" name="m_email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="휴대폰 번호" name="m_hp">
+                        </div>
+
+                        <div class="input-group mb-5">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-birthday-cake"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="생년" name="year">
+                            <select class="form-control" name="month">
+                                <option value="" selected>월</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                              <select class="form-control" name="day">
+                                <option value="" selected>일</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                              </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-primary w-100">가입하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  ======================= End signup Area =======================  -->
+</main>
+<!--  ======================= END Main Area ================================ -->
+
+
+<!--  ======================= Start footer Area ================================ -->
+
+<footer class="footer">
+    <div class="text-center pt-4">
+        <ul class="nav justify-content-center border-top">
+            <li class="nav-item">
+                <a href="#" class="nav-link">회사소개</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">제휴문의</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">공지사항</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">고객의 소리</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">이용약관</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">개인정보 처리방침</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright text-center border-top text-muted py-2">
+        <p class="mb-0">Made by Goo &copy; 2020</p>
+    </div>
+</footer>
+
+<!--  ======================= END footer Area ================================ -->
+
+
+<!--  Jquery js file  -->
+<script src="./js/jquery.3.4.1.js"></script>
+
+<!--  Bootstrap js file  -->
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

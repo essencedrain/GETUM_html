@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getum</title>
+
+    <!--  bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700,900&display=swap&subset=korean" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--  custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fixed.css">
+
+</head>
+<body>
+<!--  ======================= Start Header Area ============================== -->
+<header class="header-area mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <i class="fas fa-glass-whiskey"></i> GETUM</i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="product.html">상품목록<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">장바구니</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">주문내역</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">고객센터</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link btn btn-outline-secondary" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary" href="signup.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<!--  ======================= End Header Area ============================== -->
+
+
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
+<!--  ======================= Start login Area =======================  -->
+
+<section class="login-area">
+    <div class="container">
+        <div class="row">
+            <div class="loginFormWrap mx-auto col-md-6 col-md-offset-3">
+                <div class="heading pb-1 text-center pb-4">
+                    <h1>로그인</h1>
+                </div>
+                <div class="loginForm">
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="uid" placeholder="아이디">
+                        </div>
+                        
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" placeholder="비밀번호">
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-outline-secondary w-100">로그인</button>
+                    </form>
+                    <hr>
+                    <button class="btn btn-lg btn-primary w-100" onclick="location.href='signup.html'">회원가입</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  ======================= End login Area =======================  -->
+</main>
+<!--  ======================= END Main Area ================================ -->
+
+
+<!--  ======================= Start footer Area ================================ -->
+
+<footer class="footer">
+    <div class="text-center pt-4">
+        <ul class="nav justify-content-center border-top">
+            <li class="nav-item">
+                <a href="#" class="nav-link">회사소개</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">제휴문의</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">공지사항</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">고객의 소리</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">이용약관</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">개인정보 처리방침</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright text-center border-top text-muted py-2">
+        <p class="mb-0">Made by Goo &copy; 2020</p>
+    </div>
+</footer>
+
+<!--  ======================= END footer Area ================================ -->
+
+
+<!--  Jquery js file  -->
+<script src="./js/jquery.3.4.1.js"></script>
+
+<!--  Bootstrap js file  -->
+<script src="./js/bootstrap.min.js"></script>
+
+<!--  Bootstrap input js file  -->
+<script src="./js/bootstrap-input-spinner.js"></script>
+<script>
+    $("input[type='number']").inputSpinner();
+</script>
+<script>
+var $changedInput = $("#input")
+var $valueOnChange = $("#output")
+$changedInput.on("change", function (event) {
+    $valueOnChange.html( numberFormat( 19800*$changedInput.val() ) )
+})
+</script>
+
+<!--  isotope js library  -->
+<script src="./js/isotope.min.js"></script>
+
+<!--  wow js file  -->
+<script src="./js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--  custom js file  -->
+<script src="./js/main.js"></script>
+
+</body>
+</html>

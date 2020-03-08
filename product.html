@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getum</title>
+
+    <!--  bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700,900&display=swap&subset=korean" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--  custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fixed.css">
+
+</head>
+<body>
+<!--  ======================= Start Header Area ============================== -->
+<header class="header-area mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <i class="fas fa-glass-whiskey"></i> GETUM</i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="product.html">상품목록<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">장바구니</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">주문내역</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">고객센터</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link btn btn-outline-secondary" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary" href="signup.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<!--  ======================= End Header Area ============================== -->
+
+
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
+<!--  ======================= Start Product Area =======================  -->
+
+<section class="product-area">
+    <div class="container">
+        <div class="pb-5">
+            <h1>텀블러</h1>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="active" id="btn1" data-filter="*">All</button>
+            <button type="button" data-filter=".popular">인기상품</button>
+            <button type="button" data-filter=".latest">신제품</button>
+            <button type="button" data-filter=".stainless">스테인리스</button>
+            <button type="button" data-filter=".plastic">플라스틱</button>
+        </div>
+
+        <div class="row grid mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 latest stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="productDetail.html">
+                            <img src="./img/product/1.png" alt="product-1" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3 class="">502 스댕</h3>
+                        <h5 class="text-secondary">신제품, 스테인리스</h5>
+                        <h5 class="">19,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 popular plastic">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/2.png" alt="product-2" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3>502 RED</h3>
+                        <h5 class="text-secondary">인기상품, 플라스틱</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 popular stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/3.png" alt="product-3" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3>마그나</h3>
+                        <h5 class="text-secondary">인기상품, 스테인리스</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 popular plastic">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/4.png" alt="product-4" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3 class="text-uppercase">매드캡</h3>
+                        <h5 class="text-secondary">인기상품, 플라스틱</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/5.png" alt="product-5" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3 class="text-uppercase">크림슨</h3>
+                        <h5 class="text-secondary">스테인리스</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 latest stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/6.png" alt="product-6" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3>늑대소년</h3>
+                        <h5 class="text-secondary">신제품, 스테인리스</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/7.png" alt="product-7" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3>핑크V</h3>
+                        <h5 class="text-secondary">스테인리스</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/8.png" alt="product-8" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3>들러리</h3>
+                        <h5 class="text-secondary">스테인리스</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item p-5 plastic stainless">
+                <div class="our-product">
+                    <div class="img">
+                        <a class="test-popup-link" href="#">
+                            <img src="./img/product/9.png" alt="product-9" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4 text-center">
+                        <h3>리프카페</h3>
+                        <h5 class="text-secondary">스테인리스, 플라스틱</h5>
+                        <h5 class="">13,800원</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  ======================= End Product Area =======================  -->
+</main>
+<!--  ======================= END Main Area ================================ -->
+
+
+<!--  ======================= Start footer Area ================================ -->
+
+<footer class="footer">
+    <div class="text-center pt-4">
+        <ul class="nav justify-content-center border-top">
+            <li class="nav-item">
+                <a href="#" class="nav-link">회사소개</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">제휴문의</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">공지사항</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">고객의 소리</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">이용약관</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">개인정보 처리방침</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright text-center border-top text-muted py-2">
+        <p class="mb-0">Made by Goo &copy; 2020</p>
+    </div>
+</footer>
+<!--  ======================= END footer Area ================================ -->
+
+
+<!--  Jquery js file  -->
+<script src="./js/jquery.3.4.1.js"></script>
+
+<!--  Bootstrap js file  -->
+<script src="./js/bootstrap.min.js"></script>
+
+<!--  isotope js library  -->
+<script src="./js/isotope.min.js"></script>
+
+<!--  wow js file  -->
+<script src="./js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--  custom js file  -->
+<script src="./js/main.js"></script>
+
+</body>
+</html>
