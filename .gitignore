@@ -1,28 +1,59 @@
-#예외처리
-#폴더명 끝에 / 붙이면 디렉토리 전체를 무시
-# folder/
 
-#파일명 예외 설정
-# aaa.txt
+# Created by https://www.gitignore.io/api/macos,windows
+# Edit at https://www.gitignore.io/?templates=macos,windows
 
-# 와일드 문자열을 통한 예외 설정
-# .jpg
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-#예제1
-# *.txt
-# !important.txt
-# 위 예제는 Git에게 important.txt 라는 파일을 제외하고 확장자가 .txt 모든 파일을 무시하도록 지시 important.txt .
-# 파일이 무시 된 폴더에 있으면 다시 포함 할 수 없습니다 .
+# Icon must end with two \r
+Icon
 
-#예제2
-# folder/
-# !folder/*.txt
-# 이 예에서 폴더의 모든 .txt 파일은 무시 된 채로 남아 있습니다.
-# 올바른 방법은 폴더 자체를 별도의 줄에 다시 넣은 다음 * 로 folder 모든 파일을 무시하고 마지막으로 *.txt 를 다음과 같이 folder 다시 포함시킵니다.
-# !folder/
-# folder/*
-# !folder/*.txt
+# Thumbnails
+._*
 
-context.xml
-*.jpg
-*.png 
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/macos,windows
