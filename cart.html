@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getum</title>
+
+    <!--  bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700,900&display=swap&subset=korean" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--  custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fixed.css">
+
+</head>
+<body>
+<!--  ======================= Start Header Area ============================== -->
+<header class="header-area mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand pl-5" href="index.html"> <i class="fas fa-glass-whiskey"></i> GETUM</i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="nav ml-auto">
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="product.html">상품목록</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">장바구니</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">주문내역</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">고객센터</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link btn btn-outline-secondary px-4" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link btn btn-primary" href="signup.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<!--  ======================= End Header Area ============================== -->
+
+
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
+<!--  ======================= Start login Area =======================  -->
+
+<section class="cart-area pt-5">
+    <div class="container-fluid">
+        <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+            <h1>장바구니 <i class="fas fa-shopping-cart fa-sm"></i></h1>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <thead>
+                        <tr>
+                            <th colspan="2" class="align-middle"><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;전체선택</th>
+                            <th class="text-center align-middle">상품정보</th>
+                            <th class="text-center align-middle">상품금액</th>
+                            <th class="text-center align-middle">삭제</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left align-middle" style="width: 5%"><input type="checkbox" value=""></td>
+                                <td class="text-center align-middle" style="width: 10%"><img src="./img/product/1.png" alt="" width="80"></td>
+                                <td style="width: 65%">
+                                    <h5>(주)GETUM, 502 스댕, 1개</h5>
+                                    <hr>
+                                    <div class="text-left text-success">
+                                    16시 이전 주문 시 당일 배송
+                                    </div>
+                                    <div class="text-right">
+                                    33,490원
+                                    &nbsp;&nbsp;
+                                    <select id="formQuantity" name="formQuantity" size="1" style="width:60px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle" style="width: 15%">9,123,000원</td>
+                                <td class="text-center align-middle" style="width: 5%"><button class="btn btn-sm btn-outline-secondary"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left align-middle" style="width: 5%"><input type="checkbox" value=""></td>
+                                <td class="text-center align-middle" style="width: 10%"><img src="./img/product/1.png" alt="" width="80"></td>
+                                <td style="width: 65%">
+                                    <h5>(주)GETUM, 502 스댕, 1개</h5>
+                                    <hr>
+                                    <div class="text-left text-success">
+                                    16시 이전 주문 시 당일 배송
+                                    </div>
+                                    <div class="text-right">
+                                    33,490원
+                                    &nbsp;&nbsp;
+                                    <select id="formQuantity" name="formQuantity" size="1" style="width:60px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle" style="width: 15%">9,123,000원</td>
+                                <td class="text-center align-middle" style="width: 5%"><button class="btn btn-sm btn-outline-secondary"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                        
+                        </tbody>
+                        <tfoot>
+                            <td class="text-right align-middle pt-3 pr-4" colspan="5">
+                                <h6>상품가격 95,950원 + 배송비 무료 = 주문금액 95,590원</h6>
+                            </td>
+                        </tfoot>
+                    </table>
+                </div><!--<div class="table-responsive-md">-->
+            </div><!--<div class="col-12">-->
+        </div><!--<div class="row mt-5">-->
+
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1 align-middle">
+                <input type="checkbox" value="" id="selectCart">&nbsp;&nbsp;
+                <label for="selectCart" class="mr-2">전체선택 (2 / 2)</label>
+                <button class="btn btn-sm btn-outline-secondary">선택삭제</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+            <span class="d-block border border-dark pt-3 pb-2 text-center align-middle">
+                <h5>상품가격 95,950원 + 배송비 무료 = 주문금액 95,590원</h5>
+            </span>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1 text-center">
+                <button class="btn btn-lg btn-outline-secondary px-4 mr-2">계속 쇼핑하기</button>
+                <button class="btn btn-lg btn-primary px-5">구매하기</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  ======================= End login Area =======================  -->
+</main>
+<!--  ======================= END Main Area ================================ -->
+
+
+<!--  ======================= Start footer Area ================================ -->
+
+<footer class="footer">
+    <div class="text-center pt-4">
+        <ul class="nav justify-content-center border-top">
+            <li class="nav-item">
+                <a href="#" class="nav-link">회사소개</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">제휴문의</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">공지사항</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">고객의 소리</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">이용약관</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">개인정보 처리방침</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright text-center border-top text-muted py-2">
+        <p class="mb-0">Made by Goo &copy; 2020</p>
+    </div>
+</footer>
+
+<!--  ======================= END footer Area ================================ -->
+
+
+<!--  Jquery js file  -->
+<script src="./js/jquery.3.4.1.js"></script>
+
+<!--  Bootstrap js file  -->
+<script src="./js/bootstrap.min.js"></script>
+
+<!--  Bootstrap input js file  -->
+<script src="./js/bootstrap-input-spinner.js"></script>
+<script>
+    $("input[type='number']").inputSpinner();
+</script>
+<script>
+var $changedInput = $("#input")
+var $valueOnChange = $("#output")
+$changedInput.on("change", function (event) {
+    $valueOnChange.html( numberFormat( 19800*$changedInput.val() ) )
+})
+</script>
+
+<!--  isotope js library  -->
+<script src="./js/isotope.min.js"></script>
+
+<!--  wow js file  -->
+<script src="./js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--  custom js file  -->
+<script src="./js/main.js"></script>
+
+</body>
+</html>
