@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getum</title>
+
+    <!--  bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700,900&display=swap&subset=korean" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--  custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fixed.css">
+
+</head>
+<body>
+<!--  ======================= Start Header Area ============================== -->
+<header class="header-area mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand pl-5" href="index.html"> <i class="fas fa-glass-whiskey"></i> GETUM</i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="nav ml-auto">
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="product.html">상품목록</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">장바구니</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">주문내역</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">고객센터</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link btn btn-outline-secondary px-4" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link btn btn-primary" href="signup.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<!--  ======================= End Header Area ============================== -->
+
+
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
+<!--  ======================= Start login Area =======================  -->
+
+<section class="order-area pt-5">
+    <div class="container-fluid">
+        <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+            <h1 class="d-inline">주문 / 결제</h1>
+            <hr>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+                <h5>구매자정보</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">이름</td>
+                            <td style="width: 80%">구태형</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">이메일</td>
+                            <td style="width: 80%">moonkero@naver.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+                <div class="mb-2">
+                    <h5 class="d-inline">받는사람정보</h5>
+                    <button class="btn btn-sm btn-outline-secondary mx-1">배송지변경</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">이름</td>
+                            <td style="width: 80%">구태형</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">배송주소</td>
+                            <td style="width: 80%">서울특별시 구로구 구로중앙로99길 56 오피스텔 1408호</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">연락처</td>
+                            <td style="width: 80%">010-6275-7564</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">배송 요청사항</td>
+                            <td style="width: 80%">부재 시 경비실에 맡겨주세요</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+                <h5>주문내역</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <tr>
+                            <td style="width: 20%">img</td>
+                            <td style="width: 80%">502 스댕, 5개</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%">img</td>
+                            <td style="width: 80%">502 스댕, 5개</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1">
+                <h5>결제정보</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">총상품가격</td>
+                            <td style="width: 80%">1,588,216원</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">배송비</td>
+                            <td style="width: 80%">0원</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">포인트</td>
+                            <td style="width: 80%">
+                                <span class="mr-5">0원</span>
+                                <span class="mr-2">보유 : 0원</span>
+                                <button class="btn btn-sm btn-outline-secondary mx-1">포인트사용</button>
+                            </td>
+                        </tr>
+                        <tr class="d-none">
+                            <td class="table-secondary" style="width: 20%"></td>
+                            <td style="width: 80%">
+                                <input class="ml-2 mr-1" type="text" placeholder="0" name="pointInput" size="3">원
+                                <button class="btn btn-sm btn-primary mx-1">포인트적용</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">총결제금액</td>
+                            <td style="width: 80%">1,588,216원</td>
+                        </tr>
+                        <tr>
+                            <td class="table-secondary" style="width: 20%">결제방법</td>
+                            <td style="width: 80%">
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">계좌이체
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">신용카드
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline disabled">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio" disabled>무통장입금
+                                    </label>
+                                  </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-xl-8 offset-xl-2 col-10 offset-1 text-center">
+                <button class="btn btn-lg btn-outline-secondary px-5 m-2">이전으로</button>
+                <button class="btn btn-lg btn-primary px-5 m-2">결제하기</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--  ======================= End login Area =======================  -->
+</main>
+<!--  ======================= END Main Area ================================ -->
+
+
+<!--  ======================= Start footer Area ================================ -->
+
+<footer class="footer">
+    <div class="text-center pt-4">
+        <ul class="nav justify-content-center border-top">
+            <li class="nav-item">
+                <a href="#" class="nav-link">회사소개</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">제휴문의</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">공지사항</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">고객의 소리</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">이용약관</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">개인정보 처리방침</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright text-center border-top text-muted py-2">
+        <p class="mb-0">Made by Goo &copy; 2020</p>
+    </div>
+</footer>
+
+<!--  ======================= END footer Area ================================ -->
+
+
+<!--  Jquery js file  -->
+<script src="./js/jquery.3.4.1.js"></script>
+
+<!--  Bootstrap js file  -->
+<script src="./js/bootstrap.min.js"></script>
+
+<!--  Bootstrap input js file  -->
+<script src="./js/bootstrap-input-spinner.js"></script>
+<script>
+    $("input[type='number']").inputSpinner();
+</script>
+<script>
+var $changedInput = $("#input")
+var $valueOnChange = $("#output")
+$changedInput.on("change", function (event) {
+    $valueOnChange.html( numberFormat( 19800*$changedInput.val() ) )
+})
+</script>
+
+<!--  isotope js library  -->
+<script src="./js/isotope.min.js"></script>
+
+<!--  wow js file  -->
+<script src="./js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--  custom js file  -->
+<script src="./js/main.js"></script>
+
+</body>
+</html>
